@@ -12,9 +12,9 @@ spec:
         name: frontend
     spec:
       containers:
-      - name: guestbook
+      - name: 9gag
         # Replace  with your project ID or use `make template`
-        image: https://cloud.docker.com/u/gkhandurmz/repository/docker/gkhandurmz/9gagclone 
+        image: gkhandurmz/9gagclone 
 
         # This setting makes nodes pull the docker image every time before
         # starting the pod. This is useful when debugging, but should be turned
