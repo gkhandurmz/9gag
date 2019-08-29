@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: frontend
+  name: fronted
   labels:
-    name: frontend
+    name: fronted
 spec:
   replicas: 3
   template:
     metadata:
       labels:
-        name: frontend
+        name: fronted
     spec:
       containers:
       - name: 9gag
         # Replace  with your project ID or use `make template`
-        image: gkhandurmz/9gagclone 
+        image: gkhandurmz/9gag 
 
         # This setting makes nodes pull the docker image every time before
         # starting the pod. This is useful when debugging, but should be turned
